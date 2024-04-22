@@ -53,8 +53,8 @@ function Presentation() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          route: "https://www.youtube.com/@virgintrail",
+          label: "Youtube",
           color: "info",
         }}
         sticky
@@ -83,7 +83,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Welcome to Virgin Trails{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -92,8 +92,8 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              we specialize in crafting experiences that defy expectations. Get ready to rewrite
+              your definition of adventure.
             </MKTypography>
           </Grid>
         </Container>
