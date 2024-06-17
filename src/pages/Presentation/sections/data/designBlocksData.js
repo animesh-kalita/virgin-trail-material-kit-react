@@ -18,8 +18,8 @@ const imagesPrefix =
 
 export default [
   {
-    title: "Design Blocks",
-    description: "A selection of 45 page sections that fit perfectly in any combination",
+    title: "Treks",
+    description: "Trek the Untamed Beauty of Northeast India.",
     items: [
       {
         image: `${imagesPrefix}/headers.jpg`,
@@ -108,8 +108,9 @@ export default [
     ],
   },
   {
-    title: "Navigation",
-    description: "30+ components that will help go through the pages",
+    title: "Meghalaya",
+    description:
+      "Explore Meghalaya, where the clouds meet the earth, adorned with stunning waterfalls, caves, and living root bridges.",
     items: [
       {
         image: `${imagesPrefix}/navbars.jpg`,
@@ -132,8 +133,9 @@ export default [
     ],
   },
   {
-    title: "Input Areas",
-    description: "50+ elements that you need for text manipulation and insertion",
+    title: "Arunachal Pradesh",
+    description:
+      "Unveil the hidden gem of Arunachal Pradesh, a paradise of pristine landscapes, ancient monasteries, and diverse tribal heritage.",
     items: [
       {
         image: `${imagesPrefix}/newsletters.jpg`,
@@ -162,8 +164,9 @@ export default [
     ],
   },
   {
-    title: "Attention Catchers",
-    description: "20+ Fully coded components that popup from different places of the screen",
+    title: "Nagaland",
+    description:
+      "Experience the cultural tapestry of Nagaland, renowned for its unique tribal festivals, traditional crafts, and scenic hills.",
     items: [
       {
         image: `${imagesPrefix}/alerts.jpg`,
@@ -192,8 +195,9 @@ export default [
     ],
   },
   {
-    title: "Elements",
-    description: "80+ carefully crafted small elements that come with multiple colors and shapes",
+    title: "Mizoram",
+    description:
+      "Embrace the serene beauty of Mizoram, with its rolling hills, enchanting bamboo groves, and vibrant Mizo culture.",
     items: [
       {
         image: `${imagesPrefix}/buttons.jpg`,

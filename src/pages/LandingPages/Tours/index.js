@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // react-router-dom components
 // import { Link } from "react-router-dom";
@@ -56,6 +56,9 @@ import {
   Skeleton,
   Typography,
 } from "@mui/material";
+import axios from "axios";
+import TourCards from "./TourCards";
+// import TourCards from "./TourCards";
 
 const toursData = [
   { id: 1, name: "Tour 1", location: "Location 1", duration: "3 days", price: "$200" },
@@ -70,6 +73,22 @@ function ToursPage() {
   const [loading] = useState(true);
   const [filteredTours] = useState(toursData);
   const [sortOption] = useState("");
+  const [tours, setTours] = useState(null);
+
+  useEffect(() => {
+    const fetchServerData = async () => {
+      try {
+        // const SERVER_URL = process.env.SERVER_URL; // Retrieve server URL from environment variables
+        const response = await axios.get(`https://shy-tan-seagull-kilt.cyclic.app/tours`); // Make a GET request to the server
+        setTours(response.data); // Store response data in state variable
+        console.log("Response Data is ---", tours);
+      } catch (error) {
+        console.error("Error fetching server data:", error);
+      }
+    };
+
+    fetchServerData(); // Call the function to fetch server data when component mounts
+  }, []);
 
   const handleFilterChange = () => {
     // Implement filtering logic based on checkboxes
@@ -183,6 +202,7 @@ function ToursPage() {
           </Grid>
         </Container>
       </div>
+      {tours?.length > 0 && <TourCards tours={tours} />}
     </>
   );
 }
