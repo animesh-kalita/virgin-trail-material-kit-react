@@ -83,7 +83,7 @@ function Presentation() {
                 },
               })}
             >
-              Welcome to Virgin Trails{" "}
+              Welcome to BOGAI JAAM{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
