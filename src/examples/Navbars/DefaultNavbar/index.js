@@ -30,7 +30,7 @@ import Grow from "@mui/material/Grow";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import MuiLink from "@mui/material/Link";
-
+import YouTubeIcon from "@mui/icons-material/YouTube";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
@@ -515,8 +515,11 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                       ? "contained"
                       : "gradient"
                   }
-                  color={action.color ? action.color : "info"}
+                  color={
+                    action.label === "Youtube" ? "primary" : action.color ? action.color : "info"
+                  }
                   size="small"
+                  startIcon={action.label === "Youtube" ? <YouTubeIcon /> : null}
                 >
                   {action.label}
                 </MKButton>

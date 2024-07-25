@@ -58,9 +58,9 @@ function Team() {
             <MKBox mb={1}>
               <HorizontalTeamCard
                 image={team1}
-                name="Emma Roberts"
+                name="Sudip Deka"
                 position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                description="A mountaineer, trained guide for adventure sports, cyclist, backpacker, and a vegan."
               />
             </MKBox>
           </Grid>
@@ -68,9 +68,9 @@ function Team() {
             <MKBox mb={1}>
               <HorizontalTeamCard
                 image={team2}
-                name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Animesh Kalita"
+                position={{ color: "info", label: "Director" }}
+                description="A bikepacker,backpacker, Full Stack web Developer,adventurer and naturelover"
               />
             </MKBox>
           </Grid>
@@ -78,9 +78,9 @@ function Team() {
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={team3}
-                name="Ivana Flow"
+                name="Krishna Basumatary"
                 position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                description="Director, Mountaineer,Teacher,climber"
               />
             </MKBox>
           </Grid>
@@ -88,9 +88,9 @@ function Team() {
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={team4}
-                name="Marquez Garcia"
+                name="Manoj Kumar Patowary"
                 position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                description="Rock climber, Mountaineer, Certified High Altitude Trek Leader, Biker"
               />
             </MKBox>
           </Grid>

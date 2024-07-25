@@ -22,7 +22,7 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
+// import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
@@ -70,19 +70,19 @@ function DesignBlocks() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
-          <MKBadge
+          {/* <MKBadge
             variant="contained"
             color="info"
             badgeContent="Infinite combinations"
             container
             sx={{ mb: 2 }}
-          />
+          /> */}
           <MKTypography variant="h2" fontWeight="bold">
-            Huge collection of sections
+            Northeast Adventures Await
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            We have created multiple options for you to put together and customise into pixel
-            perfect pages.
+            Explore the stunning Northeast with North East Tour, ensuring a remarkable travel
+            experience within your budget!
           </MKTypography>
         </Grid>
       </Container>

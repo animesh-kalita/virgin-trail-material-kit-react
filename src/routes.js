@@ -39,9 +39,6 @@ Coded by www.creative-tim.com
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
-
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
@@ -67,7 +64,7 @@ import Dropdowns from "layouts/sections/elements/dropdowns";
 import ProgressBars from "layouts/sections/elements/progress-bars";
 import Toggles from "layouts/sections/elements/toggles";
 import Typography from "layouts/sections/elements/typography";
-
+import ToursPage from "pages/LandingPages/Tours";
 const routes = [
   {
     name: "pages",
@@ -93,6 +90,16 @@ const routes = [
             route: "/pages/landing-pages/author",
             component: <Author />,
           },
+          {
+            name: "tours",
+            route: "/pages/landing-pages/tours",
+            component: <ToursPage />,
+          },
+          {
+            name: "gallery",
+            route: "/pages/landing-pages/tours",
+            component: <ToursPage />,
+          },
         ],
       },
       {
@@ -108,82 +115,87 @@ const routes = [
     ],
   },
   {
-    name: "sections",
-    icon: <Icon>view_day</Icon>,
+    name: "adventure styles",
+    icon: <Icon>hiking</Icon>,
     collapse: [
       {
-        name: "page sections",
-        description: "See all sections",
+        name: "Treks",
+        description: "See all treks",
         dropdown: true,
         collapse: [
           {
-            name: "page headers",
+            name: "dzukou valley trek",
             route: "/sections/page-sections/page-headers",
             component: <PageHeaders />,
           },
           {
-            name: "features",
+            name: "pindari glacier trek",
             route: "/sections/page-sections/features",
             component: <Features />,
           },
         ],
       },
       {
-        name: "navigation",
-        description: "See all navigations",
+        name: "hikes",
+        description: "See all hikes",
         dropdown: true,
         collapse: [
           {
-            name: "navbars",
+            name: "bamboo trail hike",
             route: "/sections/navigation/navbars",
             component: <Navbars />,
           },
           {
-            name: "nav tabs",
+            name: "sielkal peak hike",
             route: "/sections/navigation/nav-tabs",
             component: <NavTabs />,
           },
           {
-            name: "pagination",
+            name: "od-rngai falls hike",
+            route: "/sections/navigation/pagination",
+            component: <Pagination />,
+          },
+          {
+            name: "thiyopani waterfall hike",
             route: "/sections/navigation/pagination",
             component: <Pagination />,
           },
         ],
       },
       {
-        name: "input areas",
-        description: "See all input areas",
+        name: "camping",
+        description: "See all camping activites",
         dropdown: true,
         collapse: [
           {
-            name: "inputs",
+            name: "overnight camping at samviti",
             route: "/sections/input-areas/inputs",
             component: <Inputs />,
           },
           {
-            name: "forms",
+            name: "overnight camping at garbhanga",
             route: "/sections/input-areas/forms",
             component: <Forms />,
           },
         ],
       },
       {
-        name: "attention catchers",
+        name: "waterfall climbing/rappeling",
         description: "See all examples",
         dropdown: true,
         collapse: [
           {
-            name: "alerts",
+            name: "rappeling at noonmati",
             route: "/sections/attention-catchers/alerts",
             component: <Alerts />,
           },
           {
-            name: "modals",
+            name: "waterfall climbing in basistha",
             route: "/sections/attention-catchers/modals",
             component: <Modals />,
           },
           {
-            name: "tooltips & popovers",
+            name: "chimney climbing in guwahati",
             route: "/sections/attention-catchers/tooltips-popovers",
             component: <TooltipsPopovers />,
           },
@@ -239,8 +251,34 @@ const routes = [
     ],
   },
   {
-    name: "docs",
-    icon: <Icon>article</Icon>,
+    name: "vehicle hire",
+    icon: <Icon>moped</Icon>,
+    collapse: [
+      {
+        name: "hire a motorcycle",
+        description: "Scooters, Motorcycle from 100-150cc available",
+        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+      },
+      {
+        name: "hire a bicycle",
+        description: "Geared and Non Geared bicycles available",
+        href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+      },
+      {
+        name: "hire a four wheeler",
+        description: "Explore our collection of fully designed components",
+        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+      },
+      {
+        name: "plugins",
+        description: "Check how you can integrate our plugins",
+        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
+      },
+    ],
+  },
+  {
+    name: "accommodation",
+    icon: <Icon>house</Icon>,
     collapse: [
       {
         name: "getting started",
@@ -265,9 +303,209 @@ const routes = [
     ],
   },
   {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
+    name: "package tours",
+    icon: <Icon>luggage</Icon>,
+    collapse: [
+      {
+        name: "assam",
+        description: "All Tours of Assam",
+        dropdown: true,
+        collapse: [
+          {
+            name: "Tour of Kaziranga ",
+            description: "(2D/1N)",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
+          },
+          {
+            name: "Upper Assam Tour",
+            description: "(2D/1N)",
+            route: "/sections/page-sections/features",
+            component: <Features />,
+          },
+          {
+            name: "Tour of Majuli",
+            description: "(2D/1N)",
+            route: "/sections/page-sections/features",
+            component: <Features />,
+          },
+          {
+            name: "Tour of Guwahati ",
+            description: "(1D)",
+            route: "/sections/page-sections/features",
+            component: <Features />,
+          },
+          {
+            name: "Lower Assam Tour",
+            description: "(2D/1N)",
+            route: "/sections/page-sections/features",
+            component: <Features />,
+          },
+        ],
+      },
+      {
+        name: "meghalaya",
+        description: "See all hikes",
+        dropdown: true,
+        collapse: [
+          {
+            name: "Shillong - Mawlynnong - Dawki - Sohra - Laitlum",
+            description: "(3D/2N)",
+            route: "/sections/navigation/navbars",
+            component: <Navbars />,
+          },
+          {
+            name: "Shillong - Dawki - Sohra - Nongriat - Dawki - Shnongpdeng",
+            description: "(4D/3N)",
+            route: "/sections/navigation/nav-tabs",
+            component: <NavTabs />,
+          },
+          {
+            name: "od-rngai falls hike",
+            route: "/sections/navigation/pagination",
+            component: <Pagination />,
+          },
+          {
+            name: "thiyopani waterfall hike",
+            route: "/sections/navigation/pagination",
+            component: <Pagination />,
+          },
+        ],
+      },
+      {
+        name: "arunachal pradesh",
+        description: "See all camping activites",
+        dropdown: true,
+        collapse: [
+          {
+            name: "overnight camping at samviti",
+            route: "/sections/input-areas/inputs",
+            component: <Inputs />,
+          },
+          {
+            name: "overnight camping at garbhanga",
+            route: "/sections/input-areas/forms",
+            component: <Forms />,
+          },
+        ],
+      },
+      {
+        name: "nagaland",
+        description: "See all examples",
+        dropdown: true,
+        collapse: [
+          {
+            name: "rappeling at noonmati",
+            route: "/sections/attention-catchers/alerts",
+            component: <Alerts />,
+          },
+          {
+            name: "waterfall climbing in basistha",
+            route: "/sections/attention-catchers/modals",
+            component: <Modals />,
+          },
+          {
+            name: "chimney climbing in guwahati",
+            route: "/sections/attention-catchers/tooltips-popovers",
+            component: <TooltipsPopovers />,
+          },
+        ],
+      },
+      {
+        name: "manipur",
+        description: "See all 32 examples",
+        dropdown: true,
+        collapse: [
+          {
+            name: "avatars",
+            route: "/sections/elements/avatars",
+            component: <Avatars />,
+          },
+          {
+            name: "badges",
+            route: "/sections/elements/badges",
+            component: <Badges />,
+          },
+          {
+            name: "breadcrumbs",
+            route: "/sections/elements/breadcrumbs",
+            component: <BreadcrumbsEl />,
+          },
+          {
+            name: "buttons",
+            route: "/sections/elements/buttons",
+            component: <Buttons />,
+          },
+          {
+            name: "dropdowns",
+            route: "/sections/elements/dropdowns",
+            component: <Dropdowns />,
+          },
+          {
+            name: "progress bars",
+            route: "/sections/elements/progress-bars",
+            component: <ProgressBars />,
+          },
+          {
+            name: "toggles",
+            route: "/sections/elements/toggles",
+            component: <Toggles />,
+          },
+          {
+            name: "typography",
+            route: "/sections/elements/typography",
+            component: <Typography />,
+          },
+        ],
+      },
+      {
+        name: "sikkim",
+        description: "See all 32 examples",
+        dropdown: true,
+        collapse: [
+          {
+            name: "avatars",
+            route: "/sections/elements/avatars",
+            component: <Avatars />,
+          },
+          {
+            name: "badges",
+            route: "/sections/elements/badges",
+            component: <Badges />,
+          },
+          {
+            name: "breadcrumbs",
+            route: "/sections/elements/breadcrumbs",
+            component: <BreadcrumbsEl />,
+          },
+          {
+            name: "buttons",
+            route: "/sections/elements/buttons",
+            component: <Buttons />,
+          },
+          {
+            name: "dropdowns",
+            route: "/sections/elements/dropdowns",
+            component: <Dropdowns />,
+          },
+          {
+            name: "progress bars",
+            route: "/sections/elements/progress-bars",
+            component: <ProgressBars />,
+          },
+          {
+            name: "toggles",
+            route: "/sections/elements/toggles",
+            component: <Toggles />,
+          },
+          {
+            name: "typography",
+            route: "/sections/elements/typography",
+            component: <Typography />,
+          },
+        ],
+      },
+    ],
   },
 ];
 
