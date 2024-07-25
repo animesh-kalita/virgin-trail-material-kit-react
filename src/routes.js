@@ -308,16 +308,36 @@ const routes = [
     collapse: [
       {
         name: "assam",
-        description: "See all treks",
+        description: "All Tours of Assam",
         dropdown: true,
         collapse: [
           {
-            name: "dzukou valley trek",
+            name: "Tour of Kaziranga ",
+            description: "(2D/1N)",
             route: "/sections/page-sections/page-headers",
             component: <PageHeaders />,
           },
           {
-            name: "pindari glacier trek",
+            name: "Upper Assam Tour",
+            description: "(2D/1N)",
+            route: "/sections/page-sections/features",
+            component: <Features />,
+          },
+          {
+            name: "Tour of Majuli",
+            description: "(2D/1N)",
+            route: "/sections/page-sections/features",
+            component: <Features />,
+          },
+          {
+            name: "Tour of Guwahati ",
+            description: "(1D)",
+            route: "/sections/page-sections/features",
+            component: <Features />,
+          },
+          {
+            name: "Lower Assam Tour",
+            description: "(2D/1N)",
             route: "/sections/page-sections/features",
             component: <Features />,
           },
@@ -329,12 +349,14 @@ const routes = [
         dropdown: true,
         collapse: [
           {
-            name: "bamboo trail hike",
+            name: "Shillong - Mawlynnong - Dawki - Sohra - Laitlum",
+            description: "(3D/2N)",
             route: "/sections/navigation/navbars",
             component: <Navbars />,
           },
           {
-            name: "sielkal peak hike",
+            name: "Shillong - Dawki - Sohra - Nongriat - Dawki - Shnongpdeng",
+            description: "(4D/3N)",
             route: "/sections/navigation/nav-tabs",
             component: <NavTabs />,
           },
